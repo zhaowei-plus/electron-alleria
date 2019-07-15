@@ -1,0 +1,91 @@
+.recordItem {
+  display: block;
+
+}
+
+.projectHeader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 60px;
+  z-index:2;
+  height: 55px;
+  border-bottom: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectHeader>div{
+  display: flex;
+}
+
+.projectContent {
+  margin-top:55px;
+}
+
+.projectNotice {
+  position:fixed;
+  top: 55px;
+  left: 60px;
+  right:0;
+  z-index: 10;
+  background: #ffffff;
+  color: #666666;
+  height: 40px;
+  padding: 10px;
+  line-height: 20px;
+}
+
+.projectViewLog {
+  float: right;
+}
+
+.projectViewLog:hover {
+  cursor: pointer;
+  color: #3D7CF7;
+}
+
+
+.projectMainArea {
+  margin-top:95px;
+  display: flex;
+  width:100%
+}
+
+.projectMainArea ul {
+  padding:0;
+  list-style: none;
+}
+
+.gutterBox {
+  padding: 5px 0;
+}
+
+.pageList {
+  overflow-y: auto;
+  height: 220px;
+}
+
+.pageList li {
+  border-bottom: 1px solid #eee;
+  padding-top: 5px ;
+  padding-right: px ;
+}
+
+.projectDevTool {
+  float: left;
+}
+
+.projectToolBox {
+  font-size: 12px;
+}
+
+.handleOpen {
+  color: #666666;
+  margin-left: 20px;
+}
+
+.handleOpen i {
+  margin-right: 5px;
+}

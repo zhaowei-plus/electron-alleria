@@ -1,0 +1,14 @@
+.blocks-wrapper {
+    background: '#ECECEC';
+    padding: '30px';
+}
+
+.block-card {
+    width: 200px;
+    height: 148px;
+}
+
+.block-card>img {
+    width: 100%;
+    height: 80px;
+}

@@ -1,0 +1,30 @@
+.panelWrapper {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  border:1px solid #e2e2e2;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow:0px 0px  15px 1px #e2e2e2;
+}
+
+.panelWrapper .panelTitle {
+  /* text-align: left; */
+  padding: 10px 0 10px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.panelWrapper .panelContent {
+  padding: 10px 0 10px 5px;
+}
+
+.panelWrapper .panelSubTitle{
+  font-size: 14px;
+  font-weight: bold;
+}

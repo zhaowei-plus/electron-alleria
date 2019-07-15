@@ -1,0 +1,132 @@
+{
+  "name": "electron-alleria",
+  "version": "1.1.0",
+  "description": "风行者",
+  "main": "main.js",
+  "scripts": {
+    "commit": "git-cz",
+    "release": "standard-version",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"tsc -w\" 'nodemon  --watch app/main  --exec \"electron app/main/index.js\"'",
+    "dev": "cd renderer && npm start",
+    "pack": "electron-builder --dir",
+    "all": "yarn && cd app && yarn && cd ../renderer && yarn",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.cai-inc.com:f2e-cube/template/Alleria.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "build": {
+    "productName": "Alleria",
+    "appId": "Alleria",
+    "asar": false,
+    "files": [
+      "**/*",
+      "./app/**/**/*",
+      "./renderer/dist/**/*"
+    ],
+    "dmg": {
+      "iconSize": 160,
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "mac": {
+      "icon": "build/icons/mac/icon.png"
+    },
+    "directories": {
+      "app": "out",
+      "output": "dist"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "electron-react-boilerplate",
+      "repo": "electron-react-boilerplate",
+      "private": false
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/plugin-proposal-do-expressions": "^7.2.0",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/plugin-proposal-function-bind": "^7.2.0",
+    "@babel/plugin-proposal-function-sent": "^7.2.0",
+    "@babel/plugin-proposal-json-strings": "^7.2.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.2.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.2.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.3.2",
+    "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.2.0",
+    "@babel/plugin-transform-react-constant-elements": "^7.2.0",
+    "@babel/plugin-transform-react-inline-elements": "^7.2.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "@types/electron": "^1.6.10",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "commitizen": "^3.1.1",
+    "concurrently": "^4.1.0",
+    "conventional-changelog": "^3.1.8",
+    "cz-conventional-changelog": "^2.1.0",
+    "electron": "^4.1.3",
+    "electron-builder": "^20.39.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-erb": "^0.0.2",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-formatter-pretty": "^2.1.1",
+    "eslint-import-resolver-webpack": "^0.11.0",
+    "eslint-plugin-compat": "^3.1.0",
+    "eslint-plugin-flowtype": "^3.4.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-testcafe": "^0.2.1",
+    "execa": "^1.0.0",
+    "gulp": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "standard-version": "^6.0.1",
+    "typescript": "^3.4.5"
+  },
+  "keywords": [
+    "模板库",
+    "GUI"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-redux": "^7.1.0"
+  }
+}

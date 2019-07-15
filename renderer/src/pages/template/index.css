@@ -1,0 +1,30 @@
+.templateHeader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 60px;
+  z-index:2;
+  height: 55px;
+  border-bottom: 1px solid #e2e2e2;
+  box-shadow:0px 0px  15px 1px #e2e2e2;
+}
+
+.templateMain>div>div:first-child {
+  background: #f5f7fb;
+  position:fixed;
+  top: 55px;
+  left:60px;
+  right:0;
+  z-index:1;
+}
+
+
+.templateMain>div>div:nth-child(3){
+  margin-top: 110px;
+}
+
+
+.templateMain .cardWrapper {
+  display: inline-block;
+  margin: 10px ;
+}

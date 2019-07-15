@@ -1,0 +1,29 @@
+.skinContent {
+    height: 250px;
+    overflow-y:scroll;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.colorCard {
+    display: flex;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorCard i {
+    display: none;
+    color:#137CBF;
+    font-size: 20px;
+}
+
+.selectedColor {
+    border: 1px solid #1585FF;
+}
+.selectedColor i{
+    display:inline-block
+}

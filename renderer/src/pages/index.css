@@ -1,0 +1,58 @@
+.personalHeader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 60px;
+  z-index:2;
+  height: 55px;
+  border-bottom: 1px solid #e2e2e2;
+  box-shadow:0px 0px  15px 1px #e2e2e2;
+}
+
+.personalContent {
+  margin-top: 55px;
+  padding-top: 20px ;
+  display:flex;
+  flex-wrap:wrap;
+}
+.personalContent .includeCard {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+
+.personalContent .personalCard {
+  position: relative;
+  width: 255px;
+  height: 155px;
+  border-radius: 10px;
+}
+
+.personalContent .personalCard:hover {
+  width: 260px;
+  height: 160px;
+}
+
+.personalContent .personalCard:hover .delIcon{
+  display:inline-block;
+}
+
+.personalContent .delIcon {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #e8e8e8;
+  font-size: 18px;
+}
+
+.personalContent .delIcon:hover {
+  color: #d81e06;
+}
+

@@ -1,0 +1,72 @@
+.PURPLE-BG {
+    background: #94849c;
+}
+
+.PURPLE-BS:hover:hover {
+    box-shadow: 0px 0px 5px 1px #94849c;
+}
+
+
+.KHAKI-BG {
+    background: #BBAC95;
+}
+
+.KHAKI-BS:hover {
+    box-shadow: 0px 0px 5px 1px #BBAC95;
+}
+
+
+.BROWN-BG {
+    background: #87725D;
+}
+
+.BROWN-BS:hover {
+    box-shadow: 0px 0px 5px 1px #87725D;
+}
+
+
+
+.RED-BG {
+    background: #A65150;
+}
+
+.RED-BS:hover {
+    box-shadow: 0px 0px 5px 1px #A65150;
+}
+
+
+.PINK-BG {
+    background: #EAB0AE;
+}
+
+.PINK-BS:hover {
+    box-shadow: 0px 0px 5px 1px #EAB0AE;
+}
+
+
+.YELLOW-BG {
+    background: #E8C57F;
+}
+
+.YELLOW-BS:hover {
+    box-shadow: 0px 0px 5px 1px #E8C57F;
+}
+
+
+.GREEN-BG {
+    background: #929773;
+}
+
+.GREEN-BS:hover {
+    box-shadow: 0px 0px 5px 1px #929773;
+}
+
+
+.BLUE-BG {
+    background: #A4B9AD;
+}
+
+.BLUE-BS:hover {
+    box-shadow: 0px 0px 5px 1px #A4B9AD;
+}
+

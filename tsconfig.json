@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": false,
+    "noUnusedLocals": true,
+    "strictNullChecks": false,
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "watch":true,
+    "noEmitOnError": true,
+    "outDir": "app/main",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": [
+    "app/main-ts/**/*",
+    "app/static/**/*", "app/main/scaffolder"
+  ]
+}

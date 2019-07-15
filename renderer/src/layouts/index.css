@@ -1,0 +1,69 @@
+.normal {
+  font-family:  "Monospaced Number", "PingFang SC", "San Francisco", "Microsoft YaHei", Arial, "Hiragino Sans GB", "Helvetica Neue", Helvetica, sans-serif;
+  display: flex;
+  height: 100%;
+}
+
+.aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  text-align: center;
+  background: #94849c;
+}
+
+.linkItem, .setting {
+  margin: 20px 0 ;
+  padding-left:2px;
+  display: block;
+  width: 60px;
+  color: #fce4dc;
+  font-size: 12px;
+  border-left:2px solid #94849c;
+}
+
+.linkItem:hover {
+  color: #ffffff;
+  border-color: rgba(244, 244, 244, 0.6);
+}
+
+.setting:hover {
+  color: #ffffff;
+}
+
+.menuSelected {
+  border-left: 2px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+.main {
+  margin: 0 auto;
+  padding-left: 60px;
+  width: 100%;
+}
+
+
+.menuIcon {
+  font-size: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding:0 !important;
+}
+
+.settingContent {
+  margin:0;
+  padding:0;
+  width: 50px;
+  list-style:none;
+}
+.settingContent li:hover {
+  color:#3D7CF7;
+  cursor: pointer;
+} 
+.settingContent li i{
+  font-size:14px;
+}
